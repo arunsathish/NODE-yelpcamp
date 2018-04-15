@@ -25,7 +25,9 @@ Starting App Server
 
 */
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://arun:arunpassword@ds049548.mlab.com:49548/yelpcamp");
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
